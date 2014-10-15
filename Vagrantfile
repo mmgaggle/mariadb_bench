@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
       os.flavor       = "hyperspeed"
       os.image        = "Centos65-latest"
       os.endpoint     = "#{ENV['OS_AUTH_URL']}/tokens"
-      os.keypair_name = "kyle_synapse"
+      os.keypair_name = "bootstrap"
       os.ssh_username = "dhc-user"    
       os.networks           = [ "private-network" ]
   end
