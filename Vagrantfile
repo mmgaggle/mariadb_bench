@@ -13,5 +13,6 @@ Vagrant.configure("2") do |config|
       os.ssh_username = "dhc-user"    
       os.networks           = [ "private-network" ]
   end
+  config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.provision "shell", path: "post.sh", privileged: false
 end
