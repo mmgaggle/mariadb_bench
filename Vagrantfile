@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
       os.api_key = "#{ENV['OS_PASSWORD']}"
       os.tenant   = "#{ENV['OS_TENANT_NAME']}"
       os.flavor       = "hyperspeed"
-      os.image        = "Centos65-latest"
+      os.image        = "Centos65"
       os.endpoint     = "#{ENV['OS_AUTH_URL']}/tokens"
       os.keypair_name = "bootstrap"
       os.ssh_username = "dhc-user"    
